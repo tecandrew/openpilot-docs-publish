@@ -154,7 +154,7 @@
                     
 <div class="px-6 pb-16 xl:pr-8">
     <div class="flex flex-col-reverse justify-between xl:flex-row">
-        <div class="prose prose-a:after:content-['_↗'] max-w-auto md:max-w-none
+        <div class="prose max-w-auto md:max-w-none
             prose-a:decoration-accent prose-a:bg-gradient-to-l from-accent/30
             hover:prose-a:bg-accent/30 hover:prose-a:decoration-2
             w-full max-w-4xl flex-grow pt-10">
@@ -165,7 +165,7 @@
 <p>And if you have a comma 3/3X, we'll deploy the change to your device for testing.</p>
 <h2 id="1-setup-your-development-environment">1. Setup your development environment</h2>
 <p>Run this to clone openpilot and install all the dependencies:</p>
-<pre><code class="language-bash">curl -fsSL openpilot.comma.ai | bash
+<pre><code class="language-bash">bash &lt;(curl -fsSL openpilot.comma.ai)
 </code></pre>
 <p>Navigate to openpilot folder &amp; activate a Python virtual environment</p>
 <pre><code class="language-bash">cd openpilot
