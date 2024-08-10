@@ -1,69 +1,29 @@
-<!DOCTYPE html>
-
-<html data-theme="comma">
+<!DOCTYPE html><html data-theme="comma">
     <head>
-        
-
-        
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=inter:400,700|roboto+mono:400&display=swap" rel="stylesheet" />
 
         
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-            
-            
               <link rel="canonical" href="https://docs.comma.ai/concepts/logs/" />
             
-
-            
-            
               <link rel="prev" href="../../how-to/connect-to-comma/" />
-            
-
-            
             
               <link rel="next" href="../safety/" />
             
         
-
-
-    
-    
     
         <title>Logs - openpilot</title>
     
+    <link rel="stylesheet" href="../../assets/stylesheets/output.css"></link>
     
-
-    
-    
-        
-        <link rel="stylesheet" href="../../assets/stylesheets/output.css"></link>
-    
-
-    
-    
-
-    
-    
-
-    
-    
-  </head>
-
-  
-  <body>
-      <div class="xl:max-w-none">
-            <div class="drawer lg:drawer-open">
-                <input id="drawer" type="checkbox" class="drawer-toggle" />
-                <div class="drawer-content flex flex-col">
-                    
-                    <div class="bg-base-100/80 backdrop-blur border-b-2 border-neutral sticky top-0 text-base-content justify-center">
+  </head><body>
+        <div class="drawer lg:drawer-open">
+            <input id="drawer" type="checkbox" class="drawer-toggle" />
+            <div class="drawer-content"><div class="bg-base-100/80 backdrop-blur border-b-2 border-neutral sticky top-0 text-base-content justify-center">
     <div class="navbar">
-        <div class="navbar-start">
-            
-            <div class="flex-none">
+        <div class="navbar-start"><div class="flex-none">
                 <label
                     for="drawer"
                     aria-label="open sidebar"
@@ -83,12 +43,7 @@
                         ></path>
                     </svg>
                 </label>
-            </div>
-
-            
-            <div class="indicator">
-                
-                    <div class="skew-y-3 indicator-item badge badge-accent badge-xs lg:badge-sm font-mono">
+            </div><div class="indicator"><div class="skew-y-3 indicator-item badge badge-accent badge-xs lg:badge-sm font-mono">
                         0.9.7
                     </div>
                 <div class="px-2 font-bold lowercase text-xl lg:text-2xl">
@@ -98,13 +53,8 @@
         </div>
 
         <div class="navbar-end">
-            
-
-            
             <div class="flex-none invisible sm:visible">
                 <ul class="menu menu-horizontal px-1">
-    
-    
     <li>
         <a
             href="https://github.com/commaai/openpilot"
@@ -122,8 +72,6 @@
             </svg>
         </a>
     </li>
-    
-    
     
     <li>
         <a
@@ -149,17 +97,13 @@
             
         </div>
     </div>
-</div>
-                    
-                    
-<div class="px-6 pb-16 xl:pr-8">
+</div><div class="px-6 pb-16 xl:pr-8">
     <div class="flex flex-col-reverse justify-between xl:flex-row">
-        <div class="prose max-w-auto md:max-w-none
-            prose-headings:font-monument-extended
+        <div class="prose md:max-w-none pt-10
             prose-a:decoration-accent prose-a:bg-gradient-to-l from-accent/30
-            hover:prose-a:bg-accent/30 hover:prose-a:decoration-2
-            w-full max-w-4xl flex-grow pt-10">
-            
+            hover:prose-a:bg-accent/30 hover:prose-a:decoration-2"
+        >
+
             <h1 id="logging">Logging</h1>
 <p>openpilot records routes in one minute chunks called segments. A route starts on the rising edge of ignition and ends on the falling edge.</p>
 <p>Check out our <a href="https://github.com/commaai/openpilot/blob/master/tools/lib/logreader.py">Python library</a> for reading openpilot logs. Also checkout our <a href="https://github.com/commaai/openpilot/tree/master/tools">tools</a> to replay and view your data. These are the same tools we use to debug and develop openpilot.</p>
@@ -177,19 +121,21 @@
 <p>qlogs are a decimated subset of the rlogs. Check out <a href="https://github.com/commaai/cereal/blob/master/services.py">cereal/services.py</a> for the decimation.</p>
 <p>qcameras are H.264 encoded, lower res versions of the fcamera.hevc. The video shown in <a href="https://connect.comma.ai/">comma connect</a> is from the qcameras.</p>
 <p>qlogs and qcameras are designed to be small enough to upload instantly on slow internet and store forever, yet useful enough for most analysis and debugging.</p>
-        </div>
 
-        
-    </div>
-</div>
-                </div>
-                
-                <div class="drawer-side" style="scroll-behavior: smooth; scroll-padding-top: 5rem;">
-                    <label for="drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-                    <ul class="menu bg-base-100 min-h-full w-70 p-4 border-r-2 border-neutral shadow-none">
-    <div class="flex flex-col items-center justify-center space-y-2">
-        
-        <svg
+            <div class="divider"></div>
+
+            <!-- This section adds support for localized revision dates -->
+            
+                Last update: <span class="badge"><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 2, 2024</span></span>
+            
+            
+
+        </div></div>
+</div></div>
+            <div class="drawer-side">
+                <label for="drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                <ul class="menu bg-base-100 w-56 md:w-72 min-h-full p-4 border-r-2 border-neutral">
+    <div class="flex flex-col items-center justify-center space-y-2"><svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 -0.25 24 24"
             fill="black"
@@ -203,145 +149,136 @@
             />
         </svg>
     </div>
-
-    <div class="h-4"></div>
     
-        <ul class="menu px-4 py-0 flex">
         
-            
-                <li>
-                    <details >
-                    <summary class="font-inter font-bold">Getting Started</summary>
-                    <ul>
-                    
-                        <li class="">
-                            <a href="../../getting-started/what-is-openpilot/" class="hover:bg-accent hover:text-accent-content">What is openpilot?</a>
-                      </li>
-                    
-                    </ul>
-                    </details>
-                </li>
-            
+        <li>
+            <details >
+                <summary class="font-bold">Getting Started</summary>
+                <ul>
+                
+                    <li class="">
+                        <a href="../../getting-started/what-is-openpilot/" class="hover:bg-accent hover:text-accent-content">What is openpilot?</a>
+                    </li>
+                
+                </ul>
+            </details>
+        </li>
         
-            
-                <li>
-                    <details >
-                    <summary class="font-inter font-bold">How-to</summary>
-                    <ul>
-                    
-                        <li class="">
-                            <a href="../../how-to/turn-the-speed-blue/" class="hover:bg-accent hover:text-accent-content">Turn the speed blue</a>
-                      </li>
-                    
-                        <li class="">
-                            <a href="../../how-to/connect-to-comma/" class="hover:bg-accent hover:text-accent-content">Connect to a comma 3/3X</a>
-                      </li>
-                    
-                    </ul>
-                    </details>
-                </li>
-            
+    
         
-            
-                <li>
-                    <details open>
-                    <summary class="font-inter font-bold">Concepts</summary>
-                    <ul>
-                    
-                        <li class="bg-neutral text-neutral-content">
-                            <a href="./" class="hover:bg-accent hover:text-accent-content">Logs</a>
-                      </li>
-                    
-                        <li class="">
-                            <a href="../safety/" class="hover:bg-accent hover:text-accent-content">Safety</a>
-                      </li>
-                    
-                    </ul>
-                    </details>
-                </li>
-            
+        <li>
+            <details >
+                <summary class="font-bold">How-to</summary>
+                <ul>
+                
+                    <li class="">
+                        <a href="../../how-to/turn-the-speed-blue/" class="hover:bg-accent hover:text-accent-content">Turn the speed blue</a>
+                    </li>
+                
+                    <li class="">
+                        <a href="../../how-to/connect-to-comma/" class="hover:bg-accent hover:text-accent-content">Connect to a comma 3/3X</a>
+                    </li>
+                
+                </ul>
+            </details>
+        </li>
         
-            
-                <li>
-                    <details >
-                    <summary class="font-inter font-bold">Car Porting</summary>
-                    <ul>
-                    
-                        <li class="">
-                            <a href="../../car-porting/what-is-a-car-port/" class="hover:bg-accent hover:text-accent-content">What is a car port?</a>
-                      </li>
-                    
-                        <li class="">
-                            <a href="../../car-porting/brand-port/" class="hover:bg-accent hover:text-accent-content">Porting a car brand</a>
-                      </li>
-                    
-                        <li class="">
-                            <a href="../../car-porting/model-port/" class="hover:bg-accent hover:text-accent-content">Porting a car model</a>
-                      </li>
-                    
-                    </ul>
-                    </details>
-                </li>
-            
+    
         
-            
-                <li>
-                    <details >
-                    <summary class="font-inter font-bold">Contributing</summary>
-                    <ul>
-                    
-                        <li class="">
-                            <a href="../../contributing/roadmap/" class="hover:bg-accent hover:text-accent-content">Roadmap</a>
-                      </li>
-                    
-                        <li class="">
-                            <a href="https://github.com/commaai/openpilot/blob/master/docs/CONTRIBUTING.md" class="hover:bg-accent hover:text-accent-content">Contributing Guide →</a>
-                      </li>
-                    
-                    </ul>
-                    </details>
-                </li>
-            
+        <li>
+            <details open>
+                <summary class="font-bold">Concepts</summary>
+                <ul>
+                
+                    <li class="bg-neutral text-neutral-content">
+                        <a href="./" class="hover:bg-accent hover:text-accent-content">Logs</a>
+                    </li>
+                
+                    <li class="">
+                        <a href="../safety/" class="hover:bg-accent hover:text-accent-content">Safety</a>
+                    </li>
+                
+                </ul>
+            </details>
+        </li>
         
-            
-                <li>
-                    <details >
-                    <summary class="font-inter font-bold">Links</summary>
-                    <ul>
-                    
-                        <li class="">
-                            <a href="https://blog.comma.ai" class="hover:bg-accent hover:text-accent-content">Blog →</a>
-                      </li>
-                    
-                        <li class="">
-                            <a href="https://comma.ai/bounties" class="hover:bg-accent hover:text-accent-content">Bounties →</a>
-                      </li>
-                    
-                        <li class="">
-                            <a href="https://github.com/commaai" class="hover:bg-accent hover:text-accent-content">GitHub →</a>
-                      </li>
-                    
-                        <li class="">
-                            <a href="https://discord.comma.ai" class="hover:bg-accent hover:text-accent-content">Discord →</a>
-                      </li>
-                    
-                        <li class="">
-                            <a href="https://x.com/comma_ai" class="hover:bg-accent hover:text-accent-content">X →</a>
-                      </li>
-                    
-                    </ul>
-                    </details>
-                </li>
-            
+    
         
-        </ul>
+        <li>
+            <details >
+                <summary class="font-bold">Car Porting</summary>
+                <ul>
+                
+                    <li class="">
+                        <a href="../../car-porting/what-is-a-car-port/" class="hover:bg-accent hover:text-accent-content">What is a car port?</a>
+                    </li>
+                
+                    <li class="">
+                        <a href="../../car-porting/brand-port/" class="hover:bg-accent hover:text-accent-content">Porting a car brand</a>
+                    </li>
+                
+                    <li class="">
+                        <a href="../../car-porting/model-port/" class="hover:bg-accent hover:text-accent-content">Porting a car model</a>
+                    </li>
+                
+                </ul>
+            </details>
+        </li>
+        
+    
+        
+        <li>
+            <details >
+                <summary class="font-bold">Contributing</summary>
+                <ul>
+                
+                    <li class="">
+                        <a href="../../contributing/roadmap/" class="hover:bg-accent hover:text-accent-content">Roadmap</a>
+                    </li>
+                
+                    <li class="">
+                        <a href="https://github.com/commaai/openpilot/blob/master/docs/CONTRIBUTING.md" class="hover:bg-accent hover:text-accent-content">Contributing Guide →</a>
+                    </li>
+                
+                </ul>
+            </details>
+        </li>
+        
+    
+        
+        <li>
+            <details >
+                <summary class="font-bold">Links</summary>
+                <ul>
+                
+                    <li class="">
+                        <a href="https://blog.comma.ai" class="hover:bg-accent hover:text-accent-content">Blog →</a>
+                    </li>
+                
+                    <li class="">
+                        <a href="https://comma.ai/bounties" class="hover:bg-accent hover:text-accent-content">Bounties →</a>
+                    </li>
+                
+                    <li class="">
+                        <a href="https://github.com/commaai" class="hover:bg-accent hover:text-accent-content">GitHub →</a>
+                    </li>
+                
+                    <li class="">
+                        <a href="https://discord.comma.ai" class="hover:bg-accent hover:text-accent-content">Discord →</a>
+                    </li>
+                
+                    <li class="">
+                        <a href="https://x.com/comma_ai" class="hover:bg-accent hover:text-accent-content">X →</a>
+                    </li>
+                
+                </ul>
+            </details>
+        </li>
+        
     
     <div class="bg-base-100 pointer-events-none sticky bottom-0 flex h-40 [mask-image:linear-gradient(transparent,#000000)]"></div>
 </ul>
-                </div>
             </div>
-
-            
         </div>
-  </body>
+    </body>
 </html>
